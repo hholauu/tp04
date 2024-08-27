@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP04</title>
+</head>
+<body>
+
+    <h1>Trabajo 04 - Uso de tablas</h1>
+    <h2>Lautaro Ibañez</h2>
+
+    <h4>Para realizar esta actividad tendrás que ayudarte de:</h4>
+    <p>
+        Conceptos básicos de tablas: <a target="_blank" href="https://developer.mozilla.org/es/docs/Learn/HTML/Tables/Basics">Enlace a MDN</a><br>
+        Tablas: <a target="_blank" href="http://web.xn--ensead-zwa.com.ar/docs/html/tabla/">Enlace al Cuadernillo</a>
+    </p>
+    
+    <p>En el mundo de la programación web, aprender a utilizar las tablas en HTML es una habilidad fundamental. Las tablas son una herramienta poderosa para organizar y presentar datos de manera estructurada en una página web. Permiten mostrar información de manera ordenada, crear diseños complejos y mejorar la accesibilidad de contenido.</p>
+    <p>Es importante recordar que el uso de tablas nos sirve para <strong>ORGANIZAR DATOS</strong> no para dar diseño a la página.</p>
+
+    <p>Las etiquetas principales que se utilizan para estructurar una tabla en HTML son las siguientes:</p>
+    <ol>
+        <li><b>table</b>: Esta etiqueta define el inicio y el fin de la tabla en HTML. Todos los elementos de la tabla deben estar contenidos dentro de esta etiqueta.</li>
+        <li><b>tr</b>: Esta etiqueta define una fila en la tabla. Dentro de esta etiqueta, se deben colocar las celdas de esa fila.</li>
+        <li><b>th</b>: Esta etiqueta se utiliza para definir una celda de encabezado de la tabla. Las celdas de encabezado suelen contener información importante y se muestran en negrita de forma predeterminada.</li>
+        <li><b>td</b>: Esta etiqueta se utiliza para definir una celda de datos en la tabla. Las celdas de datos contienen la información real que se muestra en la tabla.</li>
+    </ol>
+
+    <p>Vamos a conceptualizar la creación de tablas, para lograrlo vamos a responder algunas preguntas y nos vamos a apoyar del cuadernillo: <a href="http://web.xn--ensead-zwa.com.ar/docs/html/tabla/">http://web.xn--ensead-zwa.com.ar/docs/html/tabla/</a></p>
+    <p>Pero antes y como siempre hacemos:</p>
+    <li>Crear proyecto <b>TP4</b>.</li>
+    <li>Crear un archivo index.html</li>
+    <li>Antes de empezar, es importante conceptualizar, responde las siguientes preguntas:</li>
+
+    <h3>1. ¿Cuál es la etiqueta principal utilizada para crear una tabla en HTML?</h3>
+    <p>La etiqueta principal es "table".</p>
+
+    <h3>2. ¿Qué etiqueta se utiliza para definir una fila en una tabla?</h3>
+    <p>Se usa la etiqueta "tr".</p>
+
+    <h3>3. ¿Cuál es la etiqueta utilizada para crear una celda de encabezado en una tabla?</h3>
+    <p>Se usa la etiqueta "th".</p>
+
+    <h3>4. ¿Cuál es la etiqueta utilizada para crear una celda de datos en una tabla?</h3>
+    <p>Se usa la etiqueta "td".</p>
+
+    <h3>5. ¿Qué atributo se utiliza para especificar cuántas columnas debe abarcar una celda?</h3>
+    <p>Se utiliza "colspan" seguido de un numero.</p>
+
+    <h3>6. ¿Qué atributo se utiliza para especificar cuántas filas debe abarcar una celda?</h3>
+    <p>Se usa "rowspan".</p>
+
+    <h3>7. Si necesitamos crear una tabla con 10 filas ¿qué etiqueta y cuántas veces se debe utilizar para definir las filas?</h3>
+    <p>Se usan 10 "tr" para hacer una tabla con 10 filas.</p>
+
+    <hr>
+
+    <h4>Práctica</h4>
+    <p>Realizar los siguientes ejemplos en tablas, teniendo en cuenta:</p>
+    <li>todas las tablas están en la misma página</li>
+    <li>cada tabla debe estar en una sección especial con un identificador</li>
+    <li>realizar un header a la página con título “TABLAS”</li>
+
+    <h4>👉 TABLA 1</h4>
+    <p>Realizar una tabla que contenga 5 flores y por cada uno de ellos se debe visualizar: nombre, locación, tipo, imagen.</p>
+
+    <h4>👉 TABLA 2</h4>
+    <p>Realizar una tabla de seis pilotos según la estructura definida en: <br><a target="_blank" href="https://www.espn.com.ar/deporte-motor/f1/posiciones">https://www.espn.com.ar/deporte-motor/f1/posiciones</a></p>
+
+    <hr>
+
+    <h3>Tabla 1</h3>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Locación</th>
+            <th>Tipo</th>
+            <th>Imagen</th>
+        </tr>
+        <tr>
+            <td> Umbreon </td>
+            <td> Bosques/Cuevas </td>
+            <td> Siniestro </td>
+            <td><img src="/assets/Umbreon.png" alt="um" width="45px"></td>
+        </tr>
+        <tr>
+            <td> Gengar </td>
+            <td> Cementerios/L.Abandonados </td>
+            <td> Fanstama/Veneno </td>
+            <td><img src="/assets/Gengar.png" alt="gen" width="45px"></td>
+        </tr>
+        <tr>
+            <td> Snorlax </td>
+            <td> Montañas/Bosques </td>
+            <td> Normal </td>
+            <td> <img src="/assets/Snorlax.png" alt="snor" width="45px"></td>
+        </tr>
+        <tr>
+            <td> Pikachu </td>
+            <td> BosqueVerde/CentralEnergía </td>
+            <td> Electrico </td>
+            <td><img src="/assets/Pikachu.png" alt="pika" width="45px"></td>
+        </tr>
+        <tr>
+            <td> Gardevoir </td>
+            <td> ÁreasUrbanas </td>
+            <td> Psiquico/Hada </td>
+            <td><img src="/assets/Gardevoir.png" alt="gar" width="45px"></td>
+        </tr>
+    </table>
+
+    <h3>Tabla 2</h3>
+    <table>
+        <tr>
+            <th colspan="2"> </th>
+            <th><u>PST</u></th>
+            <th><u>BRN</u></th>
+            <th><u>SAU</u></th>
+            <th><u>AUS</u></th>
+            <th><u>JPN</u></th>
+            <th><u>CHN</u></th>
+            <th><u>MIA</u></th>
+            <th><u>ITA</u></th>
+            <th><u>MON</u></th>
+            <th><u>CAN</u></th>
+            <th><u>ESP</u></th>
+            <th><u>AUT</u></th>
+            <th><u>GBR</u></th>
+            <th><u>HUN</u></th>
+            <th><u>BEL</u></th>
+            <th><u>NED</u></th>
+        </tr>
+        <tr>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+
+        </tr>
+        <tr>
+
+        </tr>
+        <tr>
+
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+
+</body>
+</html>
